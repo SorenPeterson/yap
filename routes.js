@@ -4,6 +4,6 @@ Router.onBeforeAction(function() {
 });
 
 Router.route('/', function() {
-	this.render('Pokedex');
+	this.render('Index');
 }); 
 

@@ -4,19 +4,32 @@
 <body>
 </body>
 
-<template name="TeamBuilder">
+<template name="Index">
+	{{> Nav}}
 </template>
 
 <template name="Layout">
 	{{> yield}}
-	{{> Nav}}
 </template>
 
 <template name="Nav">
-	<ul>
-		<li>Team Builder</li>
-		<li>Pokedex</li>
-	</ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="nav-item">
+					Pokedex
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="nav-item">
+					Team Builder
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="TeamBuilder">
 </template>
 
 <template name="Picker">
