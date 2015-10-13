@@ -7,3 +7,7 @@ Router.route('/', function() {
 	this.render('Index');
 }); 
 
+Router.route('/teambuilder', function() {
+	this.render('TeamBuilder');
+});
+
