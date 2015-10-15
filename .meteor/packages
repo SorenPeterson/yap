@@ -21,3 +21,4 @@ underscore
 iron:router
 ejson
 johnantoni:meteor-normalize
+reactive-var

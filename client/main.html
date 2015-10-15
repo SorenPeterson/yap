@@ -39,9 +39,14 @@
 			add a pokemon
 		</div>
 	{{/unless}}
+	{{> Picker}}
 </template>
 
 <template name="Picker">
+	<input/>
+	{{#each results}}
+		{{name}}
+	{{/each}}
 </template>
 
 <template name="Pokedex">
