@@ -14,20 +14,31 @@
 </template>
 
 <template name="Nav">
-	<div class="nav-item">
-		Pokedex
-	</div>
-	<div class="nav-item">
-		Team Builder
-	</div>
+	<a href="/pokedex">
+		<div class="nav-item">
+			Pokedex
+		</div>
+	</a>
+	<a href="/teambuilder">
+		<div class="nav-item">
+			Team Builder
+		</div>
+	</a>
 </template>
 
 <template name="TeamBuilder">
-	<div class="pokeball-container">
-		<div class="color red"></div>
-		<div class="color white"></div>
-		<div class="center-button"></div>
-	</div>
+	{{#each team}}
+		<div class="pokeball-container">
+			<div class="color red"></div>
+			<div class="color white"></div>
+			<div class="center-button"></div>
+		</div>
+	{{/each}}
+	{{#unless team_is_full}}
+		<div class="add-pokemon">
+			add a pokemon
+		</div>
+	{{/unless}}
 </template>
 
 <template name="Picker">
