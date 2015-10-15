@@ -1,13 +1,13 @@
-.nav-item-container {
-	text-align: center;
-}
-
 .nav-item {
-	display: inline-block;
-	width: 30vw;
-	height: 30vw;
+	width: 30vh;
+	height: 30vh;
 	border: 1px solid black;
 	box-sizing: border-box;
+	margin: 10vh auto;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 30vh;
+	font-size: 2em;
 }
 
 /* team builder */
